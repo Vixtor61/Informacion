@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatibled" content="ie=edge">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <main>
+        <header>
+            <h1>Diario El Loco</h1>
+                
+            
+        </header>
+        <form action="#" method="POST">
+                <fieldset>
+                        <legend>Account</legend>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password" id="password" required pattern="(?=.*[a-z])(?=.*[A-Z]).{5,}">
+                        <label for="password">Confrima la Contraseña</label>
+                        <input type="password" name="password" id="confrim_password" required pattern="(?=.*[a-z])(?=.*[A-Z]).{5,}">
+                </fieldset>    
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                        <label form="name">Nombre</label>
+                        <input type="text" name="name" id ="name" placeholder="First Name" required pattern="[A-Z a-z]{0,10}">
+                        <label form="lastname">Apellido</label>
+                        <input type="text" name="lastname" id ="lastname" placeholder="Last Name" required pattern="[A-A a-z]{0,10}">
+            
+                        <label form="gender" >Genero</label>
+                        <input type="radio" name="gender" value="M">M
+                        <input type="radio" name="gender" value="F" required>F<br>
+                        <label form="tel">Numero Telefonico</label>
+                        <input type="tel" name="tel" id="tel" required pattern="[0-9]{8}">
+                        <label form="birthdate" name="birthdate" id="birthdate">Fecha de Nacimiento</label>
+                        <input type="date" name="birthdate" id="birthdate" placeholder="mm/dd/yyyy" required>
+                        <label form="status" name="status">Civil Status</label>
+                        <select required>
+                            <option value="solotero">Soltero</option>
+                            <option value="casado">Casado</option>
+                            <option value="acompañado">Acompañado</option>
+                            <option value="viudo">Viudo</option>
+                        </select>
+                        <label form="image">imagen</label>
+                        <input type="file">
+                        
+                    
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Experiencias de la Vida</legend>
+                        <label for="experience"></label>
+                        <textarea name="experience" id="experience" cols="200" rows="10" placeholder="Experience" required></textarea>
+                </fieldset>
+                <fieldset>
+                        <legend>Experiencia Academica</legend>
+                            
+                        <label for="Atraining"></label>
+                        <textarea name="training" id="training" cols="200" rows="10" placeholder="Training" required></textarea>    
+                    </fieldset>
+                    <fieldset>
+                            <legend>Preferencias</legend>
+                                <fieldset>
+                                    <legend>Temas de Interes</legend>
+                                    <label form="Preference">Politica</label>
+                                    <input type="checkbox" name="Preference" value="java">
+
+                                    <label form="Preference">Economia</label>
+                                    <input type="checkbox" name="Preference" value="c#">
+
+                                    <label form="Preference">Tecnologia</label>
+                                    <input type="checkbox" name="Preference" value="python">
+
+                                    <label form="Preference">Deportes</label>
+                                    <input type="checkbox" name="Preference" value="c++">
+
+                                    <label form="Preference">Medio Ambiente</label>
+                                    <input type="checkbox" name="Preference" value="ruby">
+                                </fieldset>
+                             
+                        </fieldset>
+                    <input type="submit" name="send">
+                    <input type="button" name="cancel" value="Cancel">
+                        
+
+
+            
+            </form>
+        </main>    
+</body>
+
+</html>
